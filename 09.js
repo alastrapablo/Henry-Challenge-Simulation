@@ -25,6 +25,14 @@ function filtrar(funcion) {
   //   return p.price >= 50;
   // }) => [{price: 100, name:'tv'}]
 
+  let newArr = [];
+  let actualArr = this;
+  for (let i = 0; i < actualArr.length; i++) {
+    if (funcion(actualArr[i])) {
+      newArr.push(actualArr[i]);
+    }
+  };
+  return newArr
 };
 
 // No modifiques nada debajo de esta linea //

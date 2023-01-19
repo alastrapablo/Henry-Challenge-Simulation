@@ -9,10 +9,10 @@ function soloNumeros(array) {
   // Debe devolver un arreglo con solo los enteros.
   // Ej: 
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
-  let arr = array.filter(n => Number.isInteger(n))
-  return arr
   // Tu código aca:
 
+  let arr = array.filter(n => Number.isInteger(n))
+  return arr
 }
 
 // No modifiques nada debajo de esta linea //
